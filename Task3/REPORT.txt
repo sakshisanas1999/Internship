@@ -1,0 +1,23 @@
+Title : Cross Site Scripting 
+
+Summary : There is possibility of storing XSS on http://testasp.vulnweb.com/ console.
+
+Domain : Vulnweb.com
+
+Subdomain : testasp.vulnweb.com
+
+Steps to reproduce : 
+
+Step 1 : Visit http://testasp.vulnweb.com/
+Step 2 : Find for search option in menu tab.
+Step 3 : Click on it and search dialogue box appears.
+Step 4 : Enter <script>alert(1)</script> and click search icon.
+Step 5 : The alert dialogue box appears, that indicates XSS vulnerability in the search tab.
+Step 6 : Exit and report the vulnerbility
+
+Supporting Material : 
+Please refer the attached photos & videos for reference.
+
+Impact : It can initiate interactions with other application users, including malicious attacks, that will appear to originate from the initial victim user.
+
+Mitigation : If you want to prevent website from Cross Site Scripting then you can block noscript session.
